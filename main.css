@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #e7e7e7;
+}
+
+.container{
+    /* definindo o tamanho máximo do conteúdo e com o width falando para ele ocupar 100% do navegador */
+    max-width: 960px;
+    width:100%;
+    margin: 0 auto;
+}
+
+
+header{
+    display: flex;
+    align-items: center; 
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+header img{
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+#notas{
+    width: 20%;
+}
+
+form input{
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #000;
+}
+
+form button{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #009422;
+    color:#fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #000 ;
+}
+
+table td{
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+
+}
+
+table img{
+    height: 30px;
+}
+
+.resultado{
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.aprovado{
+    background-color: #009422;
+}
+
+.reprovado{
+    background-color:red;
+}
