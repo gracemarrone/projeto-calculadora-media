@@ -63,7 +63,7 @@ function atualizarMedia(){
 // let campoMediaNotas = document.getElementById("mediaNotas");
 // campoMediaNotas.innerText = calculoMediaFinal; // acrescenta o texto entre as tags??
 
-    document.getElementById("mediaNotas").innerText = calculoMediaFinal;
+    document.getElementById("mediaNotas").innerText = calculoMediaFinal.toFixed(2);
 
 //-------------------------- DUAS FORMAS DE CHEGAR AO MESMO RESULTADO -------------------------------------
 
