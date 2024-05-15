@@ -21,13 +21,13 @@ function adicionarLinha(){
     const inputNomeAtividade = document.getElementById("atividades");
     const inputNotaAtividade = document.getElementById("notas");
 
-
     // o if está colocando como condição se na váriavel do tipo array incluir o valor do input ele enviará a mensagem a seguir  e pulará para a limpeza dos campos sem incluir
     if(atividades.includes(inputNomeAtividade.value.toLowerCase())){  // o toLowerCase() é um metódo que faz a comparação identificando letras minúsculas e maiúsculas como a mesma letra, caso não utilizasemos ele as letras minúsculas e maiúsculas mesmo sendo a mesma letra seriam tratados como letras diferentes
         alert(`A atividade ${inputNomeAtividade.value} já foi inserida`);
     }else{
-        // armazena no array da variável o valor dos inputs    
-        atividades.push (inputNomeAtividade.value);
+        // armazena no array da variável o valor dos inputs  
+        atividades.push (inputNomeAtividade.value.toLowerCase());
+        console.log(atividades);
         notas.push(parseFloat(inputNotaAtividade.value));
         //criação da linha na tabela isso é feito através da concatenação
         let linha = "<tr>"; 
